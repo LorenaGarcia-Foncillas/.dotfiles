@@ -21,12 +21,12 @@ You can clone this repository into a new hidden directory using SSH or HTTPS. Ma
 - **SSH:**
 
   ```zsh
-  git clone --recurse-submodules git@github.com:Benedict-Carling/.dotfiles.git ~/.dotfiles
+  git clone --recurse-submodules git@github.com:LorenaGarcia-Foncillas/.dotfiles.git ~/.dotfiles
   ```
 
 - **HTTPS:**
   ```zsh
-  git clone --recurse-submodules https://github.com/Benedict-Carling/.dotfiles.git ~/.dotfiles
+  git clone --recurse-submodules https://github.com/LorenaGarcia-Foncillas/.dotfiles.git ~/.dotfiles
   ```
 
 ### Step 3: Create Symbolic Links
