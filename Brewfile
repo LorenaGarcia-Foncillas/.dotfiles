@@ -1,3 +1,7 @@
+# Tap is for installing homebrews own additional packages
+# Brew is for install terminal libraries
+# Cask is for installing applications
+
 tap "homebrew/bundle"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
@@ -15,10 +19,6 @@ brew "gnupg"
 brew "wget"
 # General-purpose lossless data-compression library
 brew "zlib"
-# Commit formatting tool
-brew "commitizen"
-# Promt to store GPG key passphrases into keychain
-brew "pinentry-mac"
 # Needed to build python
 brew "openssl"
 # Needed to build python
@@ -43,14 +43,8 @@ brew "pulumi"
 brew "java"
 # Unknown but needed
 brew "jq"
-# Used to search and push to balena devices, ignored deps because it has a dependecy on node
-brew "balena-cli", args: ["ignore-dependencies"]
-# To be able to install an openapi version
+# Google chrome
 cask "chromium"
-# Reverse proxy, secure introspectable tunnels to localhost
-cask "ngrok"
-# App to write, plan, collaborate, and get organized
-cask "notion"
 # Team communication and collaboration software
 cask "slack"
 # Music streaming service
@@ -59,21 +53,7 @@ cask "spotify"
 cask "visual-studio-code"
 # Desktop client for GitHub repositories
 cask "github"
-# Command pannel
-cask "raycast"
-# Messaging Platform
-cask "whatsapp"
-# Password Manager
-cask "1password"
-# Ticketing Platform
-cask "linear-linear"
 # Video Conferencing
 cask "zoom"
 # Containerisation
 cask "docker"
-# etcher
-cask "balenaetcher"
-# gather
-cask "gather"
-# Endpoint tester
-cask "insomnia"

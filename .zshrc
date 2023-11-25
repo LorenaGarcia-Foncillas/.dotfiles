@@ -1,5 +1,5 @@
 # Needed to add poetry
-export PATH="/Users/benedictcarling/.local/bin:$PATH"
+export PATH="/Users/lorenagarcia-foncillas/.local/bin:$PATH"
 # Add Java in path
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
