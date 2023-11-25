@@ -1,7 +1,7 @@
 # Needed to add poetry
 export PATH="/Users/lorenagarcia-foncillas/.local/bin:$PATH"
 # Add Java in path
-export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
 
 # This is needed for the signing of GPG keys
 export GPG_TTY=$(tty)
@@ -14,7 +14,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # Add Homebrew to path
-eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(/usr/local/bin/brew shellenv)"
 
 # To tell Oh My Zsh to store zcompdum not in root home folder
 export ZSH_COMPDUMP="${HOME}/.cache/.zcompdump-${ZSH_VERSION}"
