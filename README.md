@@ -59,6 +59,14 @@ brew bundle --file ~/.dotfiles/Brewfile
 
 ---
 
+### User Guide.
+
+When looking to install any new applications, seach online for the brew name of the application. Then add this to the brew file.
+We have a command to update all github submodules, brew libraries and brew applications, and remove anything that was once installed with brew and now not currently present in the brew file. this is by running
+```bash
+bash update.sh
+```
+
 ## 📚 Additional Resources
 
 - macOS Defaults - [Website](https://macos-defaults.com/#%F0%9F%99%8B-what-s-a-defaults-command)
