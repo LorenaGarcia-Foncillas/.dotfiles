@@ -2,6 +2,8 @@
 export PATH="/Users/lorenagarcia-foncillas/.local/bin:$PATH"
 # Add Java in path
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
+# Add workbench 
+export PATH=$PATH:/Applications/workbench/bin_macosx64
 
 # This is needed for the signing of GPG keys
 export GPG_TTY=$(tty)
@@ -67,3 +69,19 @@ alias gco="git checkout"
 alias gco="git checkout"
 alias gp="git push"
 alias gl="git pull"
+
+#### Potentially can optimise how conda interacts with our dotfiles, here for now
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/lorenagarcia-foncillas/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/lorenagarcia-foncillas/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/lorenagarcia-foncillas/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/lorenagarcia-foncillas/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
