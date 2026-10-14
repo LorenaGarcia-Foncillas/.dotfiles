@@ -13,7 +13,8 @@ brew "fzf"          # Command-line fuzzy finder
 # No delta pager for git diff — plain git diff is fine
 brew "ripgrep"      # Blazing fast regex search (rg)
 brew "zoxide"       # Smarter cd command that learns your habits
-brew "dust"         # Visual terminal disk usage analyzer
+# dust comes from its own release binary (no usable bottle here, falls
+# back to building llvm+rust from source)
 
 # General Development Tools
 # git itself comes from Apple's Command Line Tools (newer than Homebrew's here)
