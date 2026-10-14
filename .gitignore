@@ -1,3 +1,16 @@
+# macOS system files
 .DS_Store
+
+# Sensitive configuration files
 .tokens.zsh
-Brewfile.lock.json
+
+# Wallpapers and media files (these are large binary files)
+*.webp
+*.jpg
+*.jpeg
+*.png
+*.gif
+
+# Temporary files
+*.tmp
+*.temp

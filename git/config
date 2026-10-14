@@ -1,0 +1,51 @@
+[user]
+	useConfigOnly = true
+[core]
+	editor = code --wait --reuse-window
+	pager = delta
+	untrackedCache = true
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true
+	line-numbers = true
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	allowedSignersFile = ~/.config/git/allowed_signers
+[commit]
+	verbose = true
+[tag]
+	sort = version:refname
+[init]
+	defaultBranch = main
+[fetch]
+	prune = true
+[rebase]
+	autoStash = true
+	updateRefs = true
+[rerere]
+	enabled = true
+[merge]
+	conflictstyle = zdiff3
+[diff]
+	colorMoved = default
+	algorithm = histogram
+[pull]
+	rebase = true
+[push]
+	followTags = true
+	autoSetupRemote = true
+[branch]
+	sort = committerdate
+[column]
+	ui = auto
+[help]
+	autocorrect = prompt
+[alias]
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' --abbrev-commit
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
