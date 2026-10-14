@@ -1,7 +1,8 @@
 # Core Shell & Package / Runtime Managers
 brew "starship"     # Cross-shell prompt
 brew "antidote"     # Fast Zsh plugin manager
-brew "uv"           # Fast Python manager (replaces pyenv, pip, poetry)
+# uv comes from its own installer (no Homebrew bottle for this macOS
+# version meant building the full LLVM+Rust toolchain from source)
 brew "fnm"          # Fast Node version manager (replaces nvm)
 
 # Modern CLI Productivity Tools
