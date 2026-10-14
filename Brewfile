@@ -88,8 +88,6 @@ cask "inkscape"     # Vector graphics editor
 
 # Mac App Store
 mas "Xcode", id: 497799835
-mas "TestFlight", id: 899247664
 mas "Pages", id: 409201541
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
-mas "AdBlock Pro", id: 1018301773
