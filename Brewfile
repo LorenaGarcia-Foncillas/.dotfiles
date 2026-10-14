@@ -10,7 +10,7 @@ brew "bat"          # Cat clone with syntax highlighting
 brew "eza"          # Modern ls replacement with git status & icons
 brew "fd"           # User-friendly, fast find replacement
 brew "fzf"          # Command-line fuzzy finder
-brew "git-delta"    # Syntax-highlighting pager for git
+# No delta pager for git diff — plain git diff is fine
 brew "ripgrep"      # Blazing fast regex search (rg)
 brew "zoxide"       # Smarter cd command that learns your habits
 brew "dust"         # Visual terminal disk usage analyzer
@@ -18,7 +18,7 @@ brew "dust"         # Visual terminal disk usage analyzer
 # General Development Tools
 # git itself comes from Apple's Command Line Tools (newer than Homebrew's here)
 brew "git-lfs"      # Git Large File Storage
-brew "gh"           # GitHub CLI
+# gh comes from its own release binary (no bottle for this macOS version)
 brew "gitleaks"     # Secret scanner for git repos
 brew "osv-scanner"  # Dependency vulnerability scanner
 brew "cmake"
@@ -68,7 +68,6 @@ cask "zoom"
 cask "microsoft-teams"
 cask "tailscale-app"
 cask "docker-desktop"
-cask "blackhole-2ch"
 
 # Personal extras (casks)
 cask "slack"
