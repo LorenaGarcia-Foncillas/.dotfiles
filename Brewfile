@@ -68,7 +68,6 @@ cask "microsoft-teams"
 cask "tailscale-app"
 cask "docker-desktop"
 cask "blackhole-2ch"
-cask "miniconda"
 
 # Personal extras (casks)
 cask "slack"
