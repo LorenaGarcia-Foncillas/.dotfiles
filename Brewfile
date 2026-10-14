@@ -18,7 +18,8 @@ brew "zoxide"       # Smarter cd command that learns your habits
 
 # General Development Tools
 # git itself comes from Apple's Command Line Tools (newer than Homebrew's here)
-brew "git-lfs"      # Git Large File Storage
+# git-lfs comes from its own release binary (also forced a Rust-from-
+# source build via Homebrew on this macOS version)
 # gh comes from its own release binary (no bottle for this macOS version)
 brew "gitleaks"     # Secret scanner for git repos
 brew "osv-scanner"  # Dependency vulnerability scanner
@@ -43,7 +44,8 @@ brew "imagemagick"
 brew "pandoc"
 # tectonic comes from its own release binary (Rust tool, no usable
 # bottle here, falls back to building llvm+rust from source)
-brew "yt-dlp"       # Media downloader CLI
+# yt-dlp comes from `uv tool install yt-dlp` (its rust-based build deps
+# forced a full Rust-from-source build via Homebrew on this macOS version)
 brew "rclone"       # Cloud storage sync tool
 brew "poppler"      # PDF utilities
 brew "potrace"      # Bitmap to vector tracing
@@ -53,10 +55,10 @@ brew "potrace"      # Bitmap to vector tracing
 brew "dcm2niix"     # DICOM to NIfTI converter
 brew "eigen"        # Linear algebra library used by neuroimaging tools
 # Dev tools in daily use here
-brew "black"        # Python code formatter
+# black comes from `uv tool install black` (same Rust-build issue)
 brew "croc"         # Peer-to-peer file transfer
 brew "ghostscript"  # PostScript/PDF interpreter
-brew "hf"           # Hugging Face CLI
+# hf comes from `uv tool install huggingface-hub` (same Rust-build issue)
 brew "libsndfile"   # Audio file library
 brew "llvm@18"      # Pinned LLVM toolchain
 brew "pulumi"       # Infrastructure as code
