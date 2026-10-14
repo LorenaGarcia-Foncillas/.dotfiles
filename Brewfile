@@ -15,7 +15,7 @@ brew "zoxide"       # Smarter cd command that learns your habits
 brew "dust"         # Visual terminal disk usage analyzer
 
 # General Development Tools
-brew "git"
+# git itself comes from Apple's Command Line Tools (newer than Homebrew's here)
 brew "git-lfs"      # Git Large File Storage
 brew "gh"           # GitHub CLI
 brew "gitleaks"     # Secret scanner for git repos
