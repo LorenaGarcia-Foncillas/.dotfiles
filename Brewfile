@@ -41,7 +41,6 @@ brew "awscli"
 
 # Document & Media Utilities
 brew "imagemagick"
-brew "pandoc"
 # tectonic comes from its own release binary (Rust tool, no usable
 # bottle here, falls back to building llvm+rust from source)
 # yt-dlp comes from `uv tool install yt-dlp` (its rust-based build deps
