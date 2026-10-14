@@ -41,7 +41,8 @@ brew "awscli"
 # Document & Media Utilities
 brew "imagemagick"
 brew "pandoc"
-brew "tectonic"     # Modern LaTeX engine
+# tectonic comes from its own release binary (Rust tool, no usable
+# bottle here, falls back to building llvm+rust from source)
 brew "yt-dlp"       # Media downloader CLI
 brew "rclone"       # Cloud storage sync tool
 brew "poppler"      # PDF utilities
