@@ -1,3 +1,9 @@
+# NOTE: this Mac is Intel x86_64. Homebrew dropped Intel bottle support
+# as of September 2026, so any formula with a version bump since then
+# has no Intel bottle and would build from source. `tmux`, `awscli` and
+# `pulumi` are pinned (`brew pin`, local machine state, not tracked
+# here) to their last-bottled installed versions to avoid that.
+
 # Core Shell & Package / Runtime Managers
 brew "starship"     # Cross-shell prompt
 brew "antidote"     # Fast Zsh plugin manager
